@@ -8,7 +8,7 @@ cask "compuglobal-google-chromedriver" do
     url "https://storage.googleapis.com/chrome-for-testing-public/#{version}/mac-#{arch}/chromedriver-mac-#{arch}.zip"
     desc "Web browser for automated testing."
     homepage "https://developer.chrome.com/blog/chrome-for-testing/"
-    depends_on cask: compuglobal-google-chrome
+    depends_on cask: "compuglobal-google-chrome"
 
     livecheck do
         url "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json"
