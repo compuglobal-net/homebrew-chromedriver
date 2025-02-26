@@ -27,7 +27,7 @@ cask "compuglobal-google-chrome" do
     zap trash: [
         "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.for.testing.app.*.sfl*",
         "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.for.testing.sfl*",
-        "~/Library/Application Support/Google/Chrome",
+        "~/Library/Application Support/Google/Chrome for Testing",
         "~/Library/Caches/com.google.chrome.for.testing",
         "~/Library/Caches/com.google.chrome.for.testing.helper.*",
         "~/Library/Caches/Google/Chrome",
