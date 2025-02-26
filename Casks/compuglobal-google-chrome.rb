@@ -11,7 +11,7 @@ cask "compuglobal-google-chrome" do
 
     livecheck do
         url "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json"
-        regex(/https:\/\/.*chrome-mac-#{arch}.zip/i)
+        regex(/https:\/\/.*?chrome-mac-#{arch}.zip/i)
         strategy :json do |json, regex|
             json["Stable"]&.map do |stable|
                 version = stable["version"]
