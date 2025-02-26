@@ -13,7 +13,7 @@ cask "compuglobal-google-chrome" do
         url "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json"
         regex(/https:\/\/.*chrome-mac-#{arch}.zip/i)
         strategy :json do |json, regex|
-            json["Stable"].&map do |stable|
+            json["Stable"]&.map do |stable|
                 version = stable["version"]
                 stable["chrome"]["downloads"]&.map do |download|
                     dl_url = download["url"]&.match(regex)
