@@ -1,8 +1,11 @@
 cask "compuglobal-google-chrome" do
 
     arch arm: "arm64", intel: "x64"
+    sha256 arm: "ec940509119220ee2a464dea26556cb5a8163eabce6f4bcdf15fbacad2da3993",
+           intel: "54fba3bc59f71b485f7f32363d32e2eea0d2ba26352d4d7a55af67fe75aaff38"
     name "Google Chrome for Testing"
-    url "https://googlechromelabs.github.io/chrome-for-testing/"
+    version "133.0.6943.141"
+    url "https://storage.googleapis.com/chrome-for-testing-public/#{version}/mac-#{arch}/chrome-mac-#{arch}.zip"
     desc "Web browser for automated testing."
     homepage "https://developer.chrome.com/blog/chrome-for-testing/"
 
