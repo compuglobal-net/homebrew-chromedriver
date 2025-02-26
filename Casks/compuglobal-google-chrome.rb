@@ -2,6 +2,7 @@ cask "compuglobal-google-chrome" do
 
     arch arm: "arm64", intel: "x64"
     name "Google Chrome for Testing"
+    url "https://googlechromelabs.github.io/chrome-for-testing/"
     desc "Web browser for automated testing."
     homepage "https://developer.chrome.com/blog/chrome-for-testing/"
 
